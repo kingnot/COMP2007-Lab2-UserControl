@@ -5,13 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace COMP2007_Lab2_UserControl.User_Controls
+namespace COMP2007_Lab2_UserControl
 {
-    public partial class Jumbotron : System.Web.UI.UserControl
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            JumbotronH1.InnerText = "Welcome, Guest!";
+
         }
     }
 }
