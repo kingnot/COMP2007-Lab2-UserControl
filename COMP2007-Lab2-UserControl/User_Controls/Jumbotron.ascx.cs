@@ -9,9 +9,11 @@ namespace COMP2007_Lab2_UserControl.User_Controls
 {
     public partial class Jumbotron : System.Web.UI.UserControl
     {
+        [PersistenceMode(PersistenceMode.InnerProperty)]
+        public PlaceHolder BodyContent { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            JumbotronH1.InnerText = "Welcome, Guest!";
+            content.Controls.Add(BodyContent);
         }
     }
 }
