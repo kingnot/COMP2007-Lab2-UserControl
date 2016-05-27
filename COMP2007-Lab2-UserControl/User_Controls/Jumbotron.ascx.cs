@@ -11,7 +11,7 @@ namespace COMP2007_Lab2_UserControl.User_Controls
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            JumbotronH1.InnerText = "Welcome!";
         }
     }
 }
